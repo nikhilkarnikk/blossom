@@ -35,7 +35,7 @@ const LandingPage = () => {
       <section id="hero" className="h-screen relative flex items-center overflow-hidden snap-start">
        <div className="absolute inset-0">
          <img 
-           src="/src/assets/hero1.png" 
+           src="/assets/hero1.png" 
            alt="Hero Background" 
            className="h-full w-full object-cover object-left"
          />
@@ -86,14 +86,14 @@ const LandingPage = () => {
        <div className="absolute left-0 top-1/2 transform -translate-y-1/2 flex flex-col items-center w-1/2 px-8">
          <div className="w-2/3 mb-4">
            <img 
-             src="/src/assets/ov1.jpg" 
+             src="/assets/ov1.jpg" 
              alt="Overview Image 1" 
              className="w-full h-auto object-cover shadow-lg" 
            />
          </div>
          <div className="w-2/3">
            <img 
-             src="/src/assets/ov2.jpg" 
+             src="/assets/ov2.jpg" 
              alt="Overview Image 2" 
              className="w-full h-auto object-cover shadow-lg " 
            />
@@ -226,7 +226,7 @@ const LandingPage = () => {
                     className="group"
                   >
                     <img 
-                      src={`/src/assets/${img}.webp`}
+                      src={`/assets/${img}.webp`}
                       alt={`Science Article ${index + 1}`}
                       className="w-full h-64 object-cover mb-2"
                     />
@@ -262,7 +262,7 @@ const LandingPage = () => {
             <div 
               className="w-full h-[600px] bg-cover bg-center"
               style={{ 
-                backgroundImage: 'url(/src/assets/hero4.jpg)',
+                backgroundImage: 'url(/assets/hero4.jpg)',
                 backgroundPosition: 'center',
                 backgroundSize: 'cover'
               }}
