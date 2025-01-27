@@ -35,7 +35,7 @@ const LandingPage = () => {
       <section id="hero" className="h-screen relative flex items-center overflow-hidden snap-start">
        <div className="absolute inset-0">
          <img 
-           src="/assets/hero1.png" 
+           src="/assets/hero1.jpg" 
            alt="Hero Background" 
            className="h-full w-full object-cover object-left"
          />
