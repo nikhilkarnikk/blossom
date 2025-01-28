@@ -123,7 +123,7 @@ const LandingPage = () => {
     <div className="w-2/3 my-8">
       <div className="h-[45rem]"> {/* Fixed height container */}
         <img 
-          src="/assets/ov1.JPG" 
+          src="/assets/ov1.jpg" 
           alt="Overview Image 1" 
           className="w-full h-full object-cover" 
         />
