@@ -60,12 +60,14 @@ const LandingPage = () => {
             Unlock the power of your subconscious mind to live the life you desire.
           </p>
           <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-6 sm:space-y-0 sm:space-x-6">
-          <Link
-                to="/signup"
-                className="text-black font-light text-lg sm:text-xl font-montserrat tracking-wide hover:text-gray-700 border-b-2 border-transparent hover:border-black pb-1 transition-all duration-200"
-              >
-                Sign Up For Early Access
-              </Link>
+          <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSemS89YoB0pQdWbBH_VgzAHxmOMJNnnIXNAsyTM7Y55m9kJ6g/viewform"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-black font-light text-lg sm:text-xl font-montserrat tracking-wide hover:text-gray-700 border-b-2 border-transparent hover:border-black pb-1 transition-all duration-200"
+      >
+        Sign Up For Early Access
+      </a>
             <a
                 href="mailto:blake@blossom-now.com"
                 className="text-black font-light text-lg sm:text-xl font-montserrat tracking-wide hover:text-gray-700 border-b-2 border-transparent hover:border-black pb-1 transition-all duration-200"
