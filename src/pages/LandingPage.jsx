@@ -52,66 +52,66 @@ const LandingPage = () => {
 
       {/* Main content */}
       <div className="relative z-10 w-[85%] sm:w-auto sm:max-w-2xl mx-4">
-        <div className="bg-white bg-opacity-80 p-8 sm:p-6 md:p-8 flex flex-col h-[60vh] sm:h-auto justify-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black tracking-wide font-montserrat mb-6">
-            TRANSFORM YOUR MIND, TRANSFORM YOUR REALITY
-          </h1>
-          <p className="text-lg sm:text-xl text-black tracking-wide font-montserrat font-light mb-8">
-            Unlock the power of your subconscious mind to live the life you desire.
-          </p>
-          <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-6 sm:space-y-0 sm:space-x-6">
-          <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSemS89YoB0pQdWbBH_VgzAHxmOMJNnnIXNAsyTM7Y55m9kJ6g/viewform"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-black font-light text-lg sm:text-xl font-montserrat tracking-wide hover:text-gray-700 border-b-2 border-transparent hover:border-black pb-1 transition-all duration-200"
-      >
-        Sign Up For Early Access
-      </a>
-            <a
+          <div className="bg-white bg-opacity-80 p-8 sm:p-6 md:p-8 flex flex-col h-[60vh] sm:h-auto justify-center">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black tracking-wide font-montserrat mb-6">
+              TRANSFORM YOUR MIND, TRANSFORM YOUR REALITY
+            </h1>
+            <p className="text-lg sm:text-xl text-black tracking-wide font-montserrat font-light mb-8">
+              Unlock the power of your subconscious mind to live the life you desire.
+            </p>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-6 sm:space-y-0 sm:space-x-6">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSemS89YoB0pQdWbBH_VgzAHxmOMJNnnIXNAsyTM7Y55m9kJ6g/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black font-light text-lg sm:text-xl font-montserrat tracking-wide hover:text-gray-700 border-b-2 border-transparent hover:border-black pb-1 transition-all duration-200"
+              >
+                Sign Up For Early Access
+              </a>
+              <a
                 href="mailto:blake@blossom-now.com"
                 className="text-black font-light text-lg sm:text-xl font-montserrat tracking-wide hover:text-gray-700 border-b-2 border-transparent hover:border-black pb-1 transition-all duration-200"
               >
                 Learn More
               </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Feature boxes - hidden on mobile, responsive on larger screens */}
-      <div className="hidden md:block absolute bottom-6 left-0 right-0 z-10 px-4 lg:px-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 max-w-6xl mx-auto">
-          {[
-            {
-              title: "Personalization",
-              description: "Unlike generic apps, Blossom empowers users to create content tailored to their unique goals."
-            },
-            {
-              title: "Science-Backed",
-              description: "Blossom combines neuroscience, psychology, and sound healing for proven growth techniques."
-            },
-            {
-              title: "Accessible & Intuitive",
-              description: "Easy-to-use interface and quick tools make Blossom perfect for all experience levels."
-            },
-            {
-              title: "All-in-One Platform",
-              description: "Combines affirmations, meditations, and sound therapy in one app—no multiple tools needed."
-            }
-          ].map((feature, idx) => (
-            <div
-              key={idx}
-              className="bg-white bg-opacity-80 p-3 flex flex-col justify-center h-full"
-            >
-              <h3 className="text-xs sm:text-sm font-bold text-black mb-1">{feature.title}</h3>
-              <p className="text-xs text-black text-opacity-90 leading-relaxed">
-                {feature.description}
-              </p>
-            </div>
-          ))}
+        {/* Feature boxes - only shown on larger screens (>= 1024px) */}
+        <div className="hidden xl:block absolute bottom-6 left-0 right-0 z-10 px-4 lg:px-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 max-w-6xl mx-auto">
+            {[
+              {
+                title: "Personalization",
+                description: "Unlike generic apps, Blossom empowers users to create content tailored to their unique goals."
+              },
+              {
+                title: "Science-Backed",
+                description: "Blossom combines neuroscience, psychology, and sound healing for proven growth techniques."
+              },
+              {
+                title: "Accessible & Intuitive",
+                description: "Easy-to-use interface and quick tools make Blossom perfect for all experience levels."
+              },
+              {
+                title: "All-in-One Platform",
+                description: "Combines affirmations, meditations, and sound therapy in one app—no multiple tools needed."
+              }
+            ].map((feature, idx) => (
+              <div
+                key={idx}
+                className="bg-white bg-opacity-80 p-3 flex flex-col justify-center h-full"
+              >
+                <h3 className="text-xs sm:text-sm font-bold text-black mb-1">{feature.title}</h3>
+                <p className="text-xs text-black text-opacity-90 leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
 
       {/* Overview Section */}
