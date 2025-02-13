@@ -61,7 +61,7 @@ const LandingPage = () => {
             </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-6 sm:space-y-0 sm:space-x-6">
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSemS89YoB0pQdWbBH_VgzAHxmOMJNnnIXNAsyTM7Y55m9kJ6g/viewform"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdcvnMh4D-SJ3eP2JLdIBPZPikGlRlB-E3Wo7qJwgxinHzzhg/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black font-light text-lg sm:text-xl font-montserrat tracking-wide hover:text-gray-700 border-b-2 border-transparent hover:border-black pb-1 transition-all duration-200"
@@ -69,8 +69,8 @@ const LandingPage = () => {
                 Sign Up For Early Access
               </a>
               <a
-                href="mailto:blake@blossom-now.com"
-                className="text-black font-light text-lg sm:text-xl font-montserrat tracking-wide hover:text-gray-700 border-b-2 border-transparent hover:border-black pb-1 transition-all duration-200"
+            href="mailto:Blake@blossom-now.com"
+            className="text-black font-light text-lg sm:text-xl font-montserrat tracking-wide hover:text-gray-700 border-b-2 border-transparent hover:border-black pb-1 transition-all duration-200"
               >
                 Learn More
               </a>
@@ -279,16 +279,30 @@ const LandingPage = () => {
               </div>
 
               <div className="w-2/3 grid grid-cols-3 gap-12">
-                {["science1", "science2", "science3"].map((img, index) => (
-                  <a key={index} href="#" className="group">
-                    <img
-                      src={`/assets/${img}.webp`}
-                      alt={`Science Article ${index + 1}`}
-                      className="w-full h-64 object-cover mb-2"
-                    />
-                    <div className="h-1 w-0 bg-purple-600 transition-all duration-300 group-hover:w-full"></div>
-                  </a>
-                ))}
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2440575/" target="_blank" rel="noopener noreferrer" className="group">
+                  <img
+                    src="/assets/science1.webp"
+                    alt="Science Article 1"
+                    className="w-full h-64 object-cover mb-2"
+                  />
+                  <div className="h-1 w-0 bg-purple-600 transition-all duration-300 group-hover:w-full"></div>
+                </a>
+                <a href="https://www.psychologytoday.com/us/blog/the-age-of-overindulgence/202307/the-science-behind-self-affirmations" target="_blank" rel="noopener noreferrer" className="group">
+                  <img
+                    src="/assets/science2.webp"
+                    alt="Science Article 2"
+                    className="w-full h-64 object-cover mb-2"
+                  />
+                  <div className="h-1 w-0 bg-purple-600 transition-all duration-300 group-hover:w-full"></div>
+                </a>
+                <a href="https://www.poughkeepsiejournal.com/story/life/wellness/living-being/2016/06/24/living-hypnosis/85838078/" target="_blank" rel="noopener noreferrer" className="group">
+                  <img
+                    src="/assets/science3.webp"
+                    alt="Science Article 3"
+                    className="w-full h-64 object-cover mb-2"
+                  />
+                  <div className="h-1 w-0 bg-purple-600 transition-all duration-300 group-hover:w-full"></div>
+                </a>
               </div>
             </div>
           </div>
@@ -308,9 +322,14 @@ const LandingPage = () => {
               By changing your subconscious beliefs, you can co-create a life of abundance,
               success, and joy. Sign up now to begin your journey with Blossom.
             </p>
-            <button className="px-12 py-4 md:py-6 bg-blue-50 text-gray-900 text-xl md:text-2xl font-semibold transition-colors duration-200 hover:bg-blue-100">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdcvnMh4D-SJ3eP2JLdIBPZPikGlRlB-E3Wo7qJwgxinHzzhg/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-12 py-4 md:py-6 bg-blue-50 text-gray-900 text-xl md:text-2xl font-semibold transition-colors duration-200 hover:bg-blue-100 inline-block"
+            >
               Join the Waitlist
-            </button>
+            </a>
           </div>
 
           {/* Right side image - hidden on mobile */}
@@ -341,14 +360,21 @@ const LandingPage = () => {
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-6">Connect With Us</h3>
                 <div className="flex space-x-8">
-                  <a href="#" className="text-gray-600 hover:text-gray-900">Instagram</a>
-                  <a href="#" className="text-gray-600 hover:text-gray-900">TikTok</a>
-                  <a href="#" className="text-gray-600 hover:text-gray-900">Facebook</a>
+                <a 
+                  href="https://www.instagram.com/theblossom.app?igsh=NTc4MTIwNjQ2YQ%3D%3D" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-600 hover:text-gray-900"
+                >
+                  Instagram
+                </a>
+                <a href="#" className="text-gray-600 hover:text-gray-900">TikTok</a>
+                <a href="#" className="text-gray-600 hover:text-gray-900">Facebook</a>
                 </div>
-              </div>
+                </div>
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-6">Contact</h3>
-                <p className="text-gray-600">contact@blossomapp.com</p>
+                <p className="text-gray-600">Blake@blossom-now.com</p>
               </div>
             </div>
             <div className="mt-12 pt-8 border-t border-gray-200 text-center">
